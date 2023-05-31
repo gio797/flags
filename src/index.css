@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+}
+
+header.dark {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+
+.App a {
+  color: hsl(200, 15%, 8%);
+  text-decoration: none;
+}
+
+.App {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  color: hsl(200, 15%, 8%);
+}
+
+.App.dark {
+  background-color: hsl(207, 26%, 17%);
+  color: hsl(0, 0%, 100%);
+}
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.country-card {
+  background-color: hsl(0, 0%, 98%);
+  width: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.country-card.dark {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 98%);
+}
+
+.country-card h2 {
+  padding-block: 8px;
+}
+
+.country-card p {
+  font-size: 18px;
+  font-weight: 600;
+  padding-block: 5px;
+}
+
+.country-card p span {
+  font-weight: 300;
+}
+
+.country-data {
+  padding: 30px;
+}
+
+.country-card img {
+  width: 100%;
+}
+
+.country-detail-wrapper {
+  padding: 30px;
+  flex: 1;
+}
+
+.country-detail-wrapper.dark {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(209, 23%, 22%);
+}
+
+.country-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.border-countries {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.border-countries span {
+  background-color: hsl(0, 0%, 98%);
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px -8px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 10px 10px 30px -8px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 10px 10px 30px -8px rgba(0, 0, 0, 0.47);
+}
+
+.border-countries span.dark {
+  background-color: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 98%);
+}
+
+.country-detail p {
+  font-size: 18px;
+  font-weight: 600;
+  padding-block: 5px;
+}
+
+.country-detail p span {
+  font-weight: 300;
+}
+
+.form-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+select {
+  font-family: "Nunito Sans", sans-serif;
+  color: hsl(200, 15%, 8%);
+  width: 250px;
+  background-color: hsl(0, 0%, 98%);
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+select.dark {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(209, 23%, 22%);
+}
+
+form {
+  display: flex;
+}
+
+form button {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(200, 15%, 8%);
+  border: none;
+  width: 20%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+form button.dark {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(209, 23%, 22%);
+}
+
+input {
+  font-family: "Nunito Sans", sans-serif;
+  color: hsl(0, 0%, 52%);
+  width: 100%;
+  background-color: hsl(0, 0%, 98%);
+  padding: 15px;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+input.dark {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(209, 23%, 22%);
+}
+
+.back-link {
+  font-family: "Nunito Sans", sans-serif;
+  color: hsl(200, 15%, 8%);
+  background-color: hsl(0, 0%, 98%);
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px -8px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 10px 10px 30px -8px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 10px 10px 30px -8px rgba(0, 0, 0, 0.47);
+  text-decoration: none;
+}
+
+.back-link.dark {
+  color: hsl(0, 0%, 98%);
+  background-color: hsl(209, 23%, 22%);
+}
+
+@media only screen and (min-width: 600px) {
+  .form-items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .App {
+    padding-inline: 80px;
+  }
+
+  form button {
+    width: 100px;
+  }
+
+  .country-detail {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .country-detail-text {
+    width: 40%;
+  }
+
+  .country-detail img {
+    width: 60%;
+    max-width: 600px;
+  }
+}
