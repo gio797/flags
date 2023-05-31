@@ -28,6 +28,10 @@ header.dark {
   color: hsl(0, 0%, 100%);
 }
 
+.theme-div {
+  cursor: pointer;
+}
+
 .App a {
   color: hsl(200, 15%, 8%);
   text-decoration: none;
@@ -60,7 +64,7 @@ header.dark {
 .country-card {
   background-color: hsl(0, 0%, 98%);
   width: 350px;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -73,10 +77,18 @@ header.dark {
   padding-block: 8px;
 }
 
+.country-card h2.dark {
+  color: hsl(0, 0%, 98%);
+}
+
 .country-card p {
   font-size: 18px;
   font-weight: 600;
   padding-block: 5px;
+}
+
+.country-card p.dark {
+  color: hsl(0, 0%, 98%);
 }
 
 .country-card p span {

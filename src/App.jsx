@@ -33,11 +33,14 @@ function App() {
 
   const searchCountryElement = displaySearchCountry.map((item) => {
     return (
-      <div className="country-card" key={item.name.common}>
+      <div
+        className={darkMode ? "country-card dark" : "country-card"}
+        key={item.name.common}
+      >
         <Link to={`/${item.name.common}`}>
           <img src={item.flags.png} alt="flag" />
           <div className="country-data">
-            <h2>{item.name.common}</h2>
+            <h2 className={darkMode ? "dark" : ""}>{item.name.common}</h2>
             <p>
               Population: <span>{item.population}</span>
             </p>
@@ -62,14 +65,14 @@ function App() {
         <Link to={`/${item.name.common}`}>
           <img src={item.flags.png} alt="flag" />
           <div className="country-data">
-            <h2>{item.name.common}</h2>
-            <p>
+            <h2 className={darkMode ? "dark" : ""}>{item.name.common}</h2>
+            <p className={darkMode ? "dark" : ""}>
               Population: <span>{item.population}</span>
             </p>
-            <p>
+            <p className={darkMode ? "dark" : ""}>
               Region: <span>{item.region}</span>
             </p>
-            <p>
+            <p className={darkMode ? "dark" : ""}>
               Capital: <span>{item.capital}</span>
             </p>
           </div>
